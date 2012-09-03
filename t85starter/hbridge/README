@@ -1,0 +1,5 @@
+In order to enable RESET as an input, then high fuse must be set using the following command:
+
+sudo avrdude -c usbtiny -p t85 -U hfuse:w:0x5f:m
+
+

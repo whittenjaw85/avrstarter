@@ -1,0 +1,20 @@
+This is a simple program that will assist in hastily developing projects.
+Making it publicly available is one way to improve the processes we will make together. The makefile is from http://electrons.psychogenic.com, and all the credit for making that part of the process easier goes to them.
+
+To get the program written to your device, wire it up and type `sudo make writeflash`. All the configuration assumes a few things:
+1. You're using an ATMega328PU (not just P)
+2. You are using the usbtiny programmer
+3. You are wired up properly.
+4. You substitute or append your `/etc/avrdude.conf` file with the extra microcontroller device.
+
+Frankly, avrdude isn't configured to utilize the ATMega328PU microcontroller, but the fuses and everything are configured the same as the ATMEGA328P, so you can copy the section and change the device name and signature to match the appropriate configuration. That's the only thing changed.
+
+This program is released under the MIT License. Please enjoy.
+
+Copyright (c) 2012 Jonathan Whitten
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
